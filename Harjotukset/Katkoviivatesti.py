@@ -1,0 +1,1 @@
+print(f"{"-"*80} \n Hei, {input("Nimi \n")}! \n {"-"*80} \n")
