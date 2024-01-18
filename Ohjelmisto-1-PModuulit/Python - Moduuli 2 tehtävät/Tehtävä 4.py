@@ -1,6 +1,6 @@
-i = int(input("Ensimmäinen numero.\n"))
-j = int(input("Toinen numero.\n"))
-k = int(input("Kolmas numero.\n"))
+i = float(input("Ensimmäinen numero.\n"))
+j = float(input("Toinen numero.\n"))
+k = float(input("Kolmas numero.\n"))
 
 print(f"Summa on {i + j + k} ")
 print(f"Tulo on {i * j * k} ")
