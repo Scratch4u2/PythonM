@@ -9,5 +9,7 @@ for _ in range(4):
     numero = random.randint(1, 6)
     print(numero, end="")
 
+#for i = 0, i < 3, i++: ei toimi
+
 
 
