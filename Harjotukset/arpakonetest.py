@@ -34,3 +34,13 @@ while current_player <= player_count:
     current_player += 1
 
 print(f"Paras pelaaja on {best_player} tulos oli: {best_score}")
+
+
+#break-komento: heittää ulos aktiivisesta silmukasta
+counter = 0
+while True
+    print(f"Laskuri 1:{counter}")
+    counter += 1
+    if counter == 5:
+        break
+    print(f"Laskuri 2:{counter}")
