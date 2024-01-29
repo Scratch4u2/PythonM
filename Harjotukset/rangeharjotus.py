@@ -12,3 +12,5 @@ print(rangex)
 
 inrange = range(5,91,5)
 print(list(inrange[::-1]))
+
+print(list(range(90,0,-5)))
