@@ -7,7 +7,7 @@ for i in items:
 
 print(result)"""
 
-probability = [0.52, 0.49, 0.72, 0.01, 0.12, 0.11]
+probability = [0.52, 0.49, 0.72, 0.81, 0.12, 0.11]
 results = []
 
 for p in probability:
