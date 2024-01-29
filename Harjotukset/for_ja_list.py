@@ -7,4 +7,4 @@ ihminen6 = "Jimmy"
 
 ihmiset = [ihminen1, ihminen2, ihminen3, ihminen4, ihminen5, ihminen6]
 
-print(ihmiset[1:5:2])
+print(ihmiset[-3])
