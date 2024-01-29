@@ -10,5 +10,5 @@ for i in range(90,0,-5):
     rangex.append(i)
 print(rangex)
 
-inrange = range(0,91,5)
+inrange = range(5,91,5)
 print(list(inrange[::-1]))
