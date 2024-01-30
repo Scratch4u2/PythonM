@@ -34,11 +34,21 @@ def numeroita_list(calctype,numbers):
 inventory = ["kynä", "kumi"]
 def add_to_reppu(item, new_inventory):
     new_inventory.append(item)
-    print(f"Added {item} to inventory")
+    #print(f"Added {item} to inventory")
     return new_inventory
 
 updated_inventory = add_to_reppu("Penaali", inventory)
 
-inventory.append("Hiiri")
-print(inventory)
-print(updated_inventory)
+#inventory.append("Hiiri")
+#print(inventory)
+#print(updated_inventory)
+
+def vaihda():
+    kaupunki = "Vantaa"
+    print(f"Funktiossa lopuksi: " + kaupunki)
+    return
+
+kaupunki = "Helsinki"
+print(f"Funktiossa aluksi: " + kaupunki)
+vaihda()
+print(f"Pääohjelmassa lopuksi: " + kaupunki)
