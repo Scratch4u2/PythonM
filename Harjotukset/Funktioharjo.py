@@ -27,5 +27,14 @@ def numeroita_list(calctype,numbers):
         return nummul
     return "No calculation type"
 
-print(numeroita_list("add", [1,2,3,4]))
-print(numeroita_list("multiply", [1,2,3,4]))
+#print(numeroita_list("add", [1,2,3,4]))
+#print(numeroita_list("multiply", [1,2,3,4]))
+
+#lista parametrina
+inventory = ["kynä", "kumi"]
+def add_to_reppu(item):
+    inventory.append(item)
+    print(f"Added {item} to inventory")
+    return inventory
+add_to_reppu("Penaali")
+print(inventory)
