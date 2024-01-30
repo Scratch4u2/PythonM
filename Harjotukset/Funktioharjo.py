@@ -30,6 +30,8 @@ def numeroita_list(calctype,numbers):
 #print(numeroita_list("add", [1,2,3,4]))
 #print(numeroita_list("multiply", [1,2,3,4]))
 
+
+
 #lista parametrina
 inventory = ["kynä", "kumi"]
 def add_to_reppu(item, new_inventory):
