@@ -12,6 +12,20 @@ def numeroita(calc_type,num1, num2):
     elif calc_type == "multiply":
         return num1 * num2
     return "No calculation type"
+#sumnum = numeroita(input("Calc type:\n"),2, 3)
+#print(sumnum)
 
-sumnum = numeroita(input("Calc type:\n"),2, 3)
-print(f"Sum: {sumnum}")
+def numeroita_list(calctype,numbers):
+    #print(f"{num1 + num2}")
+    if calctype == "add":
+        numsum = sum(numbers)
+        return numsum
+    elif calctype == "multiply":
+        nummul = 1
+        for i in numbers:
+            nummul = nummul * i
+        return nummul
+    return "No calculation type"
+
+print(numeroita_list("add", [1,2,3,4]))
+print(numeroita_list("multiply", [1,2,3,4]))
