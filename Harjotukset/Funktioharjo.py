@@ -32,9 +32,10 @@ def numeroita_list(calctype,numbers):
 
 #lista parametrina
 inventory = ["kynä", "kumi"]
-def add_to_reppu(item):
-    inventory.append(item)
+def add_to_reppu(item, new_inventory):
+    new_inventory.append(item)
     print(f"Added {item} to inventory")
-    return inventory
-add_to_reppu("Penaali")
+    return new_inventory
+
+print(add_to_reppu("Penaali", inventory))
 print(inventory)
