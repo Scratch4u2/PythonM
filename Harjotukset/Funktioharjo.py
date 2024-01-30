@@ -37,5 +37,8 @@ def add_to_reppu(item, new_inventory):
     print(f"Added {item} to inventory")
     return new_inventory
 
-print(add_to_reppu("Penaali", inventory))
+updated_inventory = add_to_reppu("Penaali", inventory)
+
+inventory.append("Hiiri")
 print(inventory)
+print(updated_inventory)
