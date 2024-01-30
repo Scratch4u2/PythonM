@@ -45,11 +45,31 @@ updated_inventory = add_to_reppu("Penaali", inventory)
 
 def vaihda():
     kaupunki = "Vantaa"
-    print(f"Funktiossa lopuksi: " + kaupunki)
+    #print(f"Funktiossa lopuksi: " + kaupunki)
     return
 
 kaupunki = "Helsinki"
-print(f"Funktiossa aluksi: " + kaupunki)
+#print(f"Funktiossa aluksi: " + kaupunki)
 vaihda()
 #alkuperäinen muuttujan arvo ei muuttunut
-print(f"Pääohjelmassa lopuksi: " + kaupunki)
+#print(f"Pääohjelmassa lopuksi: " + kaupunki)
+
+
+#nimetyt parametrit
+def calc_v2( num1, num2, calc_type = "add"):
+    if calc_type == "add":
+        return num1 + num2
+    elif calc_type == "multiply":
+        return num1 * num2
+
+result = calc_v2(2,4)
+#print(result)
+result = calc_v2(2,4, "multiply")
+#print(result)
+
+# satunnainen määrä parametrejä
+
+def list_v5(*parameters):
+    return parameters
+
+print(list_v5(2,5,7,"kuusi"))
