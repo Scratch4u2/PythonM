@@ -51,4 +51,5 @@ def vaihda():
 kaupunki = "Helsinki"
 print(f"Funktiossa aluksi: " + kaupunki)
 vaihda()
+#alkuperäinen muuttujan arvo ei muuttunut
 print(f"Pääohjelmassa lopuksi: " + kaupunki)
