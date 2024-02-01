@@ -13,4 +13,4 @@ lista2 = []
 
 lista2.extend(lista)
 lista2.extend(lista1)
-print(lista2)
+print(lista2[5][1])
