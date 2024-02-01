@@ -6,11 +6,14 @@ for item in lista1:
         lista2.append(item)
 
 print(lista2)"""
-
+"""
 lista = [1,2,3,5]
 lista1 = [4,[6,8],9]
 lista2 = []
 
 lista2.extend(lista)
 lista2.extend(lista1)
-print(lista2[5][1])
+print(lista2[5][1])"""
+
+print(list(set(["John", 1,5,3,1,"John",1])))
+
