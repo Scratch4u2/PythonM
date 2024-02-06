@@ -28,5 +28,9 @@ def find_country_by_code(iso_code):
     if cursor.rowcount == 1:
         return result
 
-country = find_country_by_code("FI")
-print(country)
+user_input = input("Anna maakoodi: \n").upper()
+country = find_country_by_code(user_input)
+if country:
+    print(country[0], country[1])
+else:
+    print("Ei tuloksia")
