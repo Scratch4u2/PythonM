@@ -30,6 +30,7 @@ def find_country_by_code(iso_code):
 
 user_input = input("Anna maakoodi: \n").upper()
 country = find_country_by_code(user_input)
+#jos country != None
 if country:
     print(country[0], country[1])
 else:
