@@ -9,16 +9,16 @@ connection = mysql.connector.connect(
     autocommit=True
 )
 
-def find_country_by_code(iso_code):
-    sql = f"SELECT type FROM airport WHERE iso_country= '{user_input1}'"
+def kenttatyyppi(user_input):
+    sql = f"SELECT type FROM airport WHERE iso_country= '{user_input}'"
     cursor = connection.cursor()
     cursor.execute(sql)
     result = cursor.fetchall()
-    if cursor.rowcount == 1:
+    if cursor.rowcount:
         return result
 
-user_input1 = input("Anna ICAO-koodi: \n").upper()
-airport = find_country_by_code(user_input1)
+user_input = input("Anna maakoodi: \n").upper()
+airport = find_country_by_code(user_input)
 if airport != None:
     print(airport)
 else:

@@ -9,7 +9,7 @@ connection = mysql.connector.connect(
     autocommit=True
 )
 
-def icao_haku():
+def icao_haku(user_iput1):
     sql = f"SELECT name FROM airport WHERE ident= '{user_input1}'"
     cursor = connection.cursor()
     cursor.execute(sql)
@@ -17,7 +17,7 @@ def icao_haku():
     if cursor.rowcount == 1:
         return result
 user_input1 = input("Anna ICAO-koodi: \n").upper()
-airport = find_country_by_code(user_input1)
+airport = icao_haku(user_input1)
 if airport != None:
     print(airport)
 else:
