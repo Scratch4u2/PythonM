@@ -9,7 +9,7 @@ connection = mysql.connector.connect(
     autocommit=True
 )
 
-def find_country_by_code(iso_code):
+def icao_haku():
     sql = f"SELECT name FROM airport WHERE ident= '{user_input1}'"
     cursor = connection.cursor()
     cursor.execute(sql)
