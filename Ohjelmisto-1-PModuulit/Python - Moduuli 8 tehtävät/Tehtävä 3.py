@@ -17,11 +17,11 @@ def icao_haku(ICAO):
     result = cursor.fetchall()
     return result
 
-input1 = icao_haku(input("Ensimmäinen ICAO-kodi: \n"))
-input2 = icao_haku(input("Toinen ICAO-kodi: \n"))
+input1 = icao_haku(input("Ensimmäinen ICAO-kodi: \n").upper())
+input2 = icao_haku(input("Toinen ICAO-kodi: \n").upper())
 
 if input1 != None and input2 != None:
     valimatka = geodesic(input1, input2).kilometers
-    print(f"Lentokenttien välinen välimatka on: {valimatka:.3f}")
+    print(f"Lentokenttien välinen välimatka on: {valimatka:.3f} kilometriä")
 else:
     print("Virhe: kenttiä ei löytynyt")
